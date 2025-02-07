@@ -1,0 +1,233 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo a família de fontes Myriad Pro */  
+@font-face {  
+    font-family: 'Myriad-Pro';  
+    src: url('/css/font/myriad-pro/MYRIADPRO-REGULAR.OTF') format('opentype'),  
+         url('/css/font/myriad-pro/MYRIADPRO-BOLD.OTF') format('opentype'),  
+         url('/css/font/myriad-pro/MYRIADPRO-SEMIBOLDIT.OTF') format('opentype');  
+    font-weight: normal;  
+    font-style: normal; 
+}  
+
+body {
+    overflow-x: hidden;
+}
+
+@font-face {  
+    font-family: 'Myriad-Pro';  
+    src: url('/css/font/myriad-pro/MYRIADPRO-BOLD.OTF') format('opentype');  
+    font-weight: bold;  
+}  
+
+@font-face {  
+    font-family: 'Myriad-Pro';  
+    src: url('/css/font/myriad-pro/MYRIADPRO-SEMIBOLDIT.OTF') format('opentype');  
+    font-style: italic;  
+}  
+
+/* Definindo a família de fontes Titan One */  
+@font-face {  
+    font-family: 'Titan-One';  
+    src: url('/css/font/titan_one/TitanOne-Regular.ttf') format('opentype'); 
+    font-weight: normal;  
+    font-style: normal;  
+}  
+
+/* Menu */
+.nav-link {
+    color: black;
+}
+
+.nav-link:hover {
+    color: rgb(255, 62, 181);
+}
+
+.input-group {
+    width: 220px;
+}
+
+body {
+    font-family: 'Myriad-Pro', sans-serif;  
+    margin: 0;  
+    padding: 0;
+}
+
+.section-1 {  
+    width: 100%;  
+    height: auto;  
+}  
+
+.section-1 img {  
+    width: 100%;  
+    height: auto;  
+    display: block;  
+} 
+
+.form-div-control {
+    opacity: 85%;
+    background-color: rgba(0, 0, 0, 0.788);
+    color: rgba(255, 255, 255, 0.774);
+    height: 400px;
+    border-radius: 10px;
+    font-size: var(--font-size);
+    margin-right: auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;  
+} 
+
+.form-div-control,
+.form {
+    height: 70vh;  
+}
+
+
+
+.input-square {
+    border-radius: 0;
+}
+
+.form-control:focus {
+    outline: none;
+    box-shadow: none; 
+    border-color: rgba(255, 255, 255, 0.662);
+    height: none;
+}
+
+.button-entrar {
+    background-color: rgba(90, 246, 252, 0.397);
+    color: rgba(255, 255, 255, 0.89);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.button-entrar:hover {
+    background-color: rgba(0, 67, 70, 0.562);
+}
+
+small {
+    color: rgba(255, 255, 255, 0.37);
+    font-weight: 100;
+    font-size: 13px;
+}
+
+/* Footer */  
+footer {  
+    background: linear-gradient(to right, #FAD0C6, #ACD2D0);  
+    padding: 30px 110px;  
+}  
+
+.footer-content {  
+    display: flex;  
+    align-items: center;  
+    justify-content: space-between;  
+    flex-wrap: wrap;  
+}  
+
+.footer-logo img {  
+    height: 50px; 
+    display: flex;
+}  
+
+.footer-nav {  
+    display: flex;  
+    gap: 20px;  
+}  
+
+.footer-nav a {  
+    color: #000;  
+    font-weight: bold;  
+    text-decoration: none;  
+}  
+
+.footer-nav a:hover {  
+    text-decoration: underline;  
+}
+
+.footer-btn:hover {  
+    background: #f0f0f0;  
+}
+
+
+@media (max-width: 767px) {
+    img.img-first-back {
+        display: none;
+    }
+
+    .navbar-nav {
+        margin-top: 2rem;
+    } 
+    
+    .navbar-nav .nav-link {
+        flex-direction: row;
+        margin: 0;
+        padding: 0; 
+    }
+    
+    header {
+        display: grid;
+        grid-template-columns: subgrid;
+        background-color: rgb(255, 255, 255);      
+    }
+
+    .container-fluid {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    footer {  
+        padding: 20px 15px;  
+    }  
+}
+
+@media screen and (min-width: 768px) {
+    img.img-sec-mobile {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) { 
+    .navbar-nav {
+        margin-top: 2rem;
+    } 
+    
+    .navbar-nav .nav-link {
+        flex-direction: row;
+        margin: 0;
+        padding: 0;   
+    }
+}
+
+
+@media (max-width: 1199px) {
+    .form-div-control {
+        width: 410px;
+        margin: auto;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+}
+
+  
+  /* Desktops grandes */
+  @media (min-width: 1200px) {
+    section.form-section {
+        width: 100vw;
+        background-image: url('../images/img-deslogado/img-user-deslogado/img-form\ 1.png');
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        background-size: 500px 510px;
+        background-position-x: right;
+    }
+
+    .form-div-control {
+        width: 550px;
+    }
+}

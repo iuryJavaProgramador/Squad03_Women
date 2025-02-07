@@ -1,0 +1,263 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo a família de fontes Myriad Pro */  
+@font-face {  
+    font-family: 'Myriad-Pro';  
+    src: url('/css/font/myriad-pro/MYRIADPRO-REGULAR.OTF') format('opentype'),  
+         url('/css/font/myriad-pro/MYRIADPRO-BOLD.OTF') format('opentype'),  
+         url('/css/font/myriad-pro/MYRIADPRO-SEMIBOLDIT.OTF') format('opentype');  
+    font-weight: normal;  
+    font-style: normal; 
+}  
+
+@font-face {  
+    font-family: 'Myriad-Pro';  
+    src: url('/css/font/myriad-pro/MYRIADPRO-BOLD.OTF') format('opentype');  
+    font-weight: bold;  
+}  
+
+@font-face {  
+    font-family: 'Myriad-Pro';  
+    src: url('/css/font/myriad-pro/MYRIADPRO-SEMIBOLDIT.OTF') format('opentype');  
+    font-style: italic;  
+}  
+
+/* Definindo a família de fontes Titan One */  
+@font-face {  
+    font-family: 'Titan-One';  
+    src: url('/css/font/titan_one/TitanOne-Regular.ttf') format('opentype'); 
+    font-weight: normal;  
+    font-style: normal;  
+}  
+
+body {
+    font-family: 'Myriad-Pro', sans-serif;  
+    margin: 0;  
+    padding: 0;
+    /* height: 100vh; */
+    /* background: url('../images/img-deslogado/img-user-deslogado/first-back.jpg') center/cover no-repeat fixed; */
+}
+
+/* Menu */
+.nav-link {
+    color: black;
+}
+
+.nav-link:hover {
+    color: rgb(255, 62, 181);
+}
+
+.input-group {
+    width: 220px;
+}
+
+
+
+/* Seção 1 */  
+.section-1 {  
+    width: 100%;  
+    height: auto;  
+}  
+
+.section-1 img {  
+    width: 100%;  
+    height: auto;  
+    display: block;  
+} 
+
+/* Seção 2 */  
+.section-2 {  
+    background: linear-gradient(to right, #ACD2D0, #FAD0C6);  
+    padding: 60px 110px;
+    overflow: hidden; /* Adiciona o corte para o container da imagem */  
+    position: relative; /* Para que a imagem se posicione corretamente dentro do container */
+    padding-bottom: 130px;
+}
+
+.section-2 .row {  
+    align-items: center;  
+}  
+
+.section-2 h2 {  
+    font-size: 5rem;  
+    font-weight: bold;
+    font-family: 'Titan-One';
+}  
+
+.section-2 p {  
+    font-size: 1.1rem;  
+    margin-bottom: 20px;  
+}  
+
+.btn-community {  
+    background: #fff;  
+    color: #6c4a3d;  
+    border: none;  
+    border-radius: 10px;  
+    padding: 10px 20px;  
+    font-weight: bold; 
+}  
+
+.btn-community:hover {  
+    background: #f0f0f0;  
+}
+
+.section-2 img {  
+    border-top-left-radius: 50px;  
+    border-bottom-right-radius: 15px;
+    margin-top: -180px;
+    width: 50vw;
+    height: 500px;
+    object-fit: cover;
+    position: absolute;
+}  
+
+/* Seção 3 */  
+.section-3 {  
+    background: #fff;  
+    padding: 60px 110px;
+    position: relative;
+}  
+
+.card {  
+    border: none;  
+    text-align: center;  
+}  
+
+.card img {  
+    border-radius: 10px;
+    width: auto;
+    
+    object-fit: cover;
+}  
+
+.card-title {  
+    font-weight: bold;  
+    margin-top: 15px;  
+}  
+
+/* Footer */  
+footer {  
+    background: linear-gradient(to right, #FAD0C6, #ACD2D0);  
+    padding: 30px 110px;  
+}  
+
+.footer-content {  
+    display: flex;  
+    align-items: center;  
+    justify-content: space-between;  
+    flex-wrap: wrap;  
+}  
+
+.footer-logo img {  
+    height: 50px; 
+    display: flex;
+}  
+
+.footer-nav {  
+    display: flex;  
+    gap: 20px;  
+}  
+
+.footer-nav a {  
+    color: #000;  
+    font-weight: bold;  
+    text-decoration: none;  
+}  
+
+.footer-nav a:hover {  
+    text-decoration: underline;  
+}
+.footer-btn:hover {  
+    background: #f0f0f0;  
+}
+
+
+    /* Media Querie */
+@media screen and (max-width: 767px) {
+    img.img-first-back {
+        display: none;
+    }
+
+    /* body {
+        height: 100vh;
+        background: url('../images/img-deslogado/img-user-deslogado/sec-1-mobile.jpg') center top/cover no-repeat fixed;
+    } */
+
+    .navbar-nav {
+        margin-top: 2rem;
+    } 
+    
+    .navbar-nav .nav-link {
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+    
+    }
+    
+    header {
+        display: grid;
+        grid-template-columns: subgrid;
+        background-color: rgb(255, 255, 255);      
+    }
+
+    .container-fluid {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .section-2 {  
+        padding: 30px 15px;  
+        height: 1100px;
+    }  
+
+    div#div-img-istock {
+        margin-top: 15rem;
+    }
+
+    .section-2 img {
+        width: 86vw;
+        border-top-left-radius: 0px;  
+        border-bottom-right-radius: 0px;
+        border-radius: 10px;
+    }
+    
+    .section-3 {  
+        padding: 30px 15px;  
+    }  
+    
+    footer {  
+        padding: 20px 15px;  
+    }  
+}
+
+@media screen and (min-width: 768px) {
+    img.img-sec-mobile {
+        display: none;
+    }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 991px) { 
+    .navbar-nav {
+        margin-top: 2rem;
+    } 
+    
+    .navbar-nav .nav-link {
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+    
+    }
+}
+
+
+@media screen and (min-width: 992px) { 
+}
