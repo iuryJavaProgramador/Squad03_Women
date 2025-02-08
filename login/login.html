@@ -1,67 +1,162 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="Network" content="Ambiente onde as mulheres possam se unir, se conectarem etc.">
-    <meta http-equiv="Content-Language" content="pt-BR">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content=".">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="robots" content="index, follow">
-    <meta name="author" content="Squad 03 - Recode Pro AI">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="referrer" content="no-referrer">
     <meta http-equiv="X-Frame-Options" content="DENY">
-    <meta property="og:title" content="Women">
-    <meta property="og:description" content="Solução voltada para as mulheres...">
-    <meta property="og:type" content="website">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
 
     <title>Login</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://use.typekit.net/yif8orj.css">
+
+   <!-- Bootstrap -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+   <!-- CDN Icons -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+   <!-- MDBootstrap CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css">
+
+   <link rel="canonical" href="https://mdbootstrap.com/snippets/" />
+   <!-- Font Awesome -->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="../assets/css/login.css">
 
 </head>
 <body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg d-lg-block">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../assets/images/img-deslogado/logo-deslogado/Logo-Completa_Preto.png" alt="Logo" width="120" class="img-fluid rounded">
+                </a>
     
+                <button class="navbar-toggler" id="menu-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i id="menu-icon" class="fas fa-bars"></i>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto gap-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html" target="_top">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre nós</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Serviços</a>
+                        </li>
+                        <form class="input-group my-auto">
+                            <input autocomplete="off" type="search" class="form-control rounded" placeholder='Search'>
+                            <span class="input-group-text border-0"><i class="fas fa-search"></i></span>
+                        </form>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#entrar">Entrar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../cadastro/cadastro.html?scroll=form" target="_top"><button class="btn btn-sm btn-primary" type="menu">Cadastre-se</button></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Seção 1 -->  
+    <section class="section-1">  
+        <img class="img-first-back" src="../assets/images/img-deslogado/img-user-deslogado/first-back.jpg" alt="Imagem Seção 1"> 
+    
+        <img class="img-sec-mobile" src="../assets/images/img-deslogado/img-user-deslogado/sec-1-mobile.jpg" alt="Imagem 2 Seção 1">
+    </section> 
+
     <!-- Tela de login -->
-    <div class="form-div-control" aria-live="polite">
-        <fieldset>
-            <form class="form mt-5 mx-4" role="form">
-                <legend class="text-center">Já tenho conta</legend>
+    <section class="container form-section" id="entrar">
+        <div class="form-div-control" aria-live="polite">
+            <fieldset>
+                <form class="form mt-5 mx-4" role="form">
+                    <legend class="text-center">Já tenho conta</legend>
+                    <label for="nome">Nome</label>
+                    <div class="input-group w-100 mb-3">
+                    <span class="input-group-text" id="basic-addon1">
+                        <i class="bi bi-person-fill"></i>
+                    </span>
+                    <input type="text" class="form-control input-square" id="nome" name="nome" placeholder="Usuário ou e-mail" required aria-invalid="true" aria-required="true">
+                    </div>
+                    <label for="senha">Senha</label>
+                    <div class="input-group w-100">
+                    <span class="input-group-text" id="basic-addon2">
+                        <i class="bi bi-lock-fill"></i>
+                    </span>
+                    <input type="password" class="form-control input-square" id="senha" name="senha" placeholder="Digite sua senha" required aria-required="true" aria-invalid="true">
+                    </div>
+                    <button tabindex="3" type="submit" class="button-entrar mt-3 w-50 justify-content-center m-auto d-flex mt-4" aria-label="Clique para criar a sua conta"><a class="text-white text-decoration-none" href="../home_logada/home_conect.html">Entrar</a></button>
+        
+                    <div class="div-linha mt-5 my-5">
+                      </div>
+                    <div class="social_media d-flex justify-content-center">
+                        <a class="text-decoration-none" href=""><i class="bi bi-google"></i></a>
+                        <a class="text-decoration-none" href=""><i class="bi bi-apple"></i></a>
+                    </div>
+                    <small><a class="a-acesso d-flex pt-4 justify-content-center" href="../cadastro/cadastro.html?scroll=form" target="_top">É o meu primeiro acesso</a></small>
+                </form>
+            </fieldset>
+        </div>
+    </section>
 
-                <label for="nome">Nome</label>
-                <div class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1">
-                    <i class="bi bi-person-fill"></i>
-                </span>
-                <input type="text" class="form-control input-square" id="nome" name="nome" placeholder="Usuário ou e-mail" required aria-invalid="true" aria-required="true">
-                </div>
+ 
 
-                <label for="senha">Senha</label>
-                <div class="input-group">
-                <span class="input-group-text" id="basic-addon2">
-                    <i class="bi bi-lock-fill"></i>
-                </span>
-                <input type="password" class="form-control input-square" id="senha" name="senha" placeholder="Digite sua senha" required aria-required="true" aria-invalid="true">
-                </div>
+    <!-- Footer -->  
+  <footer>  
+    <div class="container">  
+      <div class="footer-content">  
+        <div class="footer-logo">  
+          <img src="../assets/images/img-deslogado/logo-deslogado/Logo-Completa_CinzaEscuro.png" alt="Logo">  
+        </div>  
+        <div class="footer-nav">  
+          <a href="#">Sobre</a>  
+          <a href="#">Contato</a>  
+          <a href="#">Eventos</a>  
+        </div>  
+        <div>  
+          <a href="#" class="btn btn-community">Participe da Comunidade</a>  
+        </div>  
+      </div>  
+    </div>  
+  </footer>  
 
-                <button tabindex="3" type="submit" class="button-entrar mt-3 w-50 justify-content-center m-auto d-flex mt-4" aria-label="Clique para criar a sua conta">Entrar</button>
-    
-                <div class="div-linha mt-5 my-5">
-                  </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-                <div class="social_media d-flex justify-content-center">
-                    <a class="text-decoration-none" href=""><i class="bi bi-google"></i></a>
+    <script src="../assets/js/loginscript.js"></script>
 
-                    <a class="text-decoration-none" href=""><i class="bi bi-apple"></i></a>
-                </div>
+    <script>  
+        function openSidebar() {  
+          //implementar a lógica para abrir a sidebar externa ou usar outra forma
+          console.log("Abrir sidebar externa");  
+        }  
 
-                <small><a class="a-acesso d-flex pt-4 justify-content-center" href="cadastro.html" target="_top">É o meu primeiro acesso</a></small>
-            </form>
-        </fieldset>
-    </div> 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-    </script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const urlParams = new URLSearchParams(window.location.search);
+          if (urlParams.get("scroll") === "form") {
+              const formulario = document.querySelector(".form-section");
+
+              if (formulario) {
+                  formulario.scrollIntoView({ behavior: "smooth", block: "start" });
+              }
+          }
+        });
+    </script> 
 
 </body>
 </html>
