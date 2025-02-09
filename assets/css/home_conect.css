@@ -17,6 +17,7 @@
 /* Menu */
 body {
     background-color: #fbfbfb;
+    overflow-x: hidden;
 }
 
 /* Sidebar */
@@ -47,15 +48,85 @@ body {
     overflow-y: auto;
 }
 
-.dropdown-menu-ul {
-    width: 430px;
-    height: 170px;
+
+.nav-item .fa-bell {
+    font-size: 1.1rem;
+    color: #ff0062cd;
+    transition: transform 0.2s ease-in-out;
 }
 
-.btn-xs {
-    line-height: 1;
-    padding: 4px 6px;  
+.nav-item .fa-bell:hover  {
+    transform: scale(1.2);
 }
+
+/* Ícone de notificação (badge) */
+.badge-notification {
+    font-size: 0.8rem;
+    padding: 2px 5px;
+    font-weight: bold;
+}
+
+/* Estilizando a lista de notificações */
+.dropdown-menu-ul {
+    width: 350px;
+    max-height: 400px;
+    overflow-y: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Cada notificação */
+.dropdown-menu-ul li {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    transition: background 0.2s;
+    border-radius: 8px;
+}
+
+.dropdown-menu-ul li:hover {
+    background-color: #f8f8f8;
+}
+
+/* Imagem da notificação */
+.dropdown-menu-ul img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+/* Texto da notificação */
+.dropdown-menu-ul span {
+    flex-grow: 1;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+/* Botões de ação */
+.dropdown-menu-ul button {
+    border: none;
+    padding: 5px 8px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.dropdown-menu-ul .btn-success {
+    background-color: #4caf50;
+    color: white;
+}
+
+.dropdown-menu-ul .btn-danger {
+    background-color: #f44336;
+    color: white;
+}
+
+.dropdown-menu-ul button:hover {
+    opacity: 0.8;
+}
+
 
 /* Perfil */
 .user-profile {
@@ -86,22 +157,9 @@ body {
     object-fit: cover;
 }
 
-/* Feed */
-textarea#postText {
-    border: transparent;
-} 
-
-.container-feed {
-    background-color: white;
-}
-
-.feed-container {
-    max-width: 600px;
-    margin: auto;
-}
-
 .post-box {
     border: 3px ridge rgba(202, 202, 202, 0.107);
+    background-color: rgba(176, 0, 0, 0.09);
     border-top: none;
     padding: 10px;
     border-radius: 10px;
@@ -155,7 +213,7 @@ label#icon-box3 {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin: 20px;
     padding: 20px;
-    max-width: 600px;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -164,6 +222,7 @@ label#icon-box3 {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
+    
 }
 
 .post-header img {
@@ -208,7 +267,7 @@ label#icon-box3 {
 
 .comentario {
     display: flex;
-    align-items: start; /* Alinha a imagem e o texto verticalmente */
+    align-items: start; 
     margin-bottom: 20px;
     line-height: 1.2;
 }
@@ -224,14 +283,48 @@ label#icon-box3 {
 }
 
 @media (max-width: 767px) {
+    .feed-container {
+        margin: auto;
+        padding-top: 6rem;
+        width: 400px;
+    }
+
     .form-search-screen {
         width: 200px;
     }
 }
 
-/* Media querie */
-@media (min-width: 991.98px) {
+
+@media (min-width: 768px) and (max-width: 991.97px) {
+    .feed-container {
+    margin: auto;
+    padding-top: 6rem;
+    width: 600px;
+  }
+}
+
+
+@media (min-width: 991.98px) and (max-width: 1300px) {
     main {
         padding-left: 240px;
     }
+
+    button#postButton {
+        margin-left: auto;
+    }
+
+    .feed-container {
+        margin-left: auto;
+        padding-top: 6rem;
+        width: 670px;
+      }
+}
+
+
+@media (min-width: 1301px) {
+    .feed-container {
+        margin: auto;
+        padding-top: 6rem;
+        width: 750px;
+      }
 }

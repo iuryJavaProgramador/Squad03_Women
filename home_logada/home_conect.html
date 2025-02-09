@@ -111,37 +111,45 @@
                 </form>
 
                 <ul class="navbar-nav ms-auto d-flex align-items-center flex-row">
+   
+
+
+
                     <li class="nav-item dropdown">
                         <a class="nav-link me-3 me-lg-0 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fas fa-bell" title="Notificações"></i>
                             <span class="badge rounded-pill badge-notification bg-danger">3</span>
                         </a>
-                        <ul class="dropdown-menu-ul dropdown-menu dropdown-menu-end shadow-lg rounded-3 p-2" aria-labelledby="navbarDropdownMenuLink">
-
-                            <li class="d-flex align-items-center">
-                                <img src="../assets/images/img-logado/notificacao/mulheresunidas.png" class="rounded-circle me-2" width="30" height="30" alt=""/>
-                                <span class="flex-grow-1">Mulheres Unidas enviou uma solicitação de amizade</span>
-                                <button class="btn btn-xs btn-success me-1"><i class="fas fa-check"></i></button>
-                                <button class="btn btn-xs btn-danger"><i class="fas fa-times"></i></button>
+                        
+                        <ul class="dropdown-menu-ul dropdown-menu dropdown-menu-end shadow-lg p-2" aria-labelledby="navbarDropdownMenuLink">
+                            <!-- Notificação 1 -->
+                            <li>
+                                <img src="../assets/images/img-logado/notificacao/mulheresunidas.png" alt="Mulheres Unidas">
+                                <span>Mulheres Unidas enviou uma solicitação de amizade</span>
+                                <button class="btn btn-success"><i class="fas fa-check"></i></button>
+                                <button class="btn btn-danger"><i class="fas fa-times"></i></button>
                             </li>
                             <li><hr class="dropdown-divider"></li>
                     
-                            <li class="d-flex align-items-center">
-                                <img src="../assets/images/img-logado/notificacao/ongwoman.png" class="rounded-circle me-2" width="30" height="30" alt=""/>
-                                <span class="flex-grow-1">Ong Woman convidou você para se juntar à nossa comunidade</span>
-                                <button class="btn btn-xs btn-success me-1"><i class="fas fa-check"></i></button>
-                                <button class="btn btn-xs btn-danger"><i class="fas fa-times"></i></button>
+                            <!-- Notificação 2 -->
+                            <li>
+                                <img src="../assets/images/img-logado/notificacao/ongwoman.png" alt="Ong Woman">
+                                <span>Ong Woman convidou você para se juntar à nossa comunidade</span>
+                                <button class="btn btn-success"><i class="fas fa-check"></i></button>
+                                <button class="btn btn-danger"><i class="fas fa-times"></i></button>
                             </li>
                             <li><hr class="dropdown-divider"></li>
                     
-                            <li class="d-flex align-items-center">
-                                <img src="../assets/images/img-logado/notificacao/recodepro.png" class="rounded-circle me-2" width="30" height="30" alt=""/>
-                                <span class="flex-grow-1">Recode Pro AI deseja fazer parte da ONG</span>
-                                <button class="btn btn-xs btn-success me-1"><i class="fas fa-check"></i></button>
-                                <button class="btn btn-xs btn-danger"><i class="fas fa-times"></i></button>
+                            <!-- Notificação 3 -->
+                            <li>
+                                <img src="../assets/images/img-logado/notificacao/recodepro.png" alt="Recode Pro AI">
+                                <span>Recode Pro AI deseja fazer parte da ONG</span>
+                                <button class="btn btn-success"><i class="fas fa-check"></i></button>
+                                <button class="btn btn-danger"><i class="fas fa-times"></i></button>
                             </li>
                         </ul>
                     </li>
+                    
 
                     <div class="d-flex align-items-center">
                         <li class="nav-item"><a class="nav-link me-3 me-lg-0" href="#"><i class="bi bi-linkedin" title="Linkedln"></i></a></li>
@@ -190,8 +198,8 @@
     </header>
 
     <!-- Feed -->
-    <section class="container">
-        <div class="container-feed p-5 d-block mt-5 feed-container">
+    <section class="container container-section-feed">
+        <div class="feed-container">
             <div class="post-box">
                 <textarea id="postText" class="form-control p-1 mb-2 py-3" placeholder="O que você está pensando?"></textarea>
                 <div class="mt-3 d-flex gap-3">
@@ -211,7 +219,7 @@
                         <i class="bi bi-calendar4-event"></i>
                     </label>
                 </div>
-                <button class="mt-3 btn btn-sm btn-success ms-auto d-flex" id="postButton">Postar</button>
+                <button class="mt-3 btn btn-sm btn-success  d-flex" id="postButton">Postar</button>
             </div>
 
             <div id="feed"></div>

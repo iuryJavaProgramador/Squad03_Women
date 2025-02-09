@@ -40,8 +40,7 @@ body {
     font-family: 'Myriad-Pro', sans-serif;  
     margin: 0;  
     padding: 0;
-    /* height: 100vh; */
-    /* background: url('../images/img-deslogado/img-user-deslogado/first-back.jpg') center/cover no-repeat fixed; */
+
 }
 
 /* Menu */
@@ -75,8 +74,8 @@ body {
 .section-2 {  
     background: linear-gradient(to right, #ACD2D0, #FAD0C6);  
     padding: 60px 110px;
-    overflow: hidden; /* Adiciona o corte para o container da imagem */  
-    position: relative; /* Para que a imagem se posicione corretamente dentro do container */
+    overflow: hidden;  
+    position: relative; 
     padding-bottom: 130px;
 }
 
