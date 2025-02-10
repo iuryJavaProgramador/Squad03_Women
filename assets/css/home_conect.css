@@ -51,7 +51,7 @@ body {
 
 .nav-item .fa-bell {
     font-size: 1.1rem;
-    color: #ff0062cd;
+    color: #00000097;
     transition: transform 0.2s ease-in-out;
 }
 
@@ -59,14 +59,12 @@ body {
     transform: scale(1.2);
 }
 
-/* Ícone de notificação (badge) */
 .badge-notification {
     font-size: 0.8rem;
     padding: 2px 5px;
     font-weight: bold;
 }
 
-/* Estilizando a lista de notificações */
 .dropdown-menu-ul {
     width: 350px;
     max-height: 400px;
@@ -76,7 +74,6 @@ body {
     border: 1px solid #ddd;
 }
 
-/* Cada notificação */
 .dropdown-menu-ul li {
     padding: 10px;
     display: flex;
@@ -89,21 +86,18 @@ body {
     background-color: #f8f8f8;
 }
 
-/* Imagem da notificação */
 .dropdown-menu-ul img {
     border-radius: 50%;
     width: 40px;
     height: 40px;
 }
 
-/* Texto da notificação */
 .dropdown-menu-ul span {
     flex-grow: 1;
     font-size: 0.9rem;
     color: #333;
 }
 
-/* Botões de ação */
 .dropdown-menu-ul button {
     border: none;
     padding: 5px 8px;
@@ -119,7 +113,7 @@ body {
 }
 
 .dropdown-menu-ul .btn-danger {
-    background-color: #f44336;
+    background-color: #c56159;
     color: white;
 }
 
@@ -133,6 +127,7 @@ body {
     position: relative;
     background: #f8f9fa;
     border-bottom: 1px solid #ddd;
+    
 }
 
 .cover-photo img {
@@ -161,13 +156,14 @@ body {
     border: 3px ridge rgba(202, 202, 202, 0.107);
     background-color: rgba(176, 0, 0, 0.09);
     border-top: none;
-    padding: 10px;
     border-radius: 10px;
+    
 }
 
 .post-header {
     display: flex;
     align-items: center;
+    margin: 10px;
 }
 
 .post-header img {
@@ -211,11 +207,9 @@ label#icon-box3 {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-    padding: 20px;
-    max-width: 1000px;
-    margin-left: auto;
     margin-right: auto;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
 }
 
 .post-header {
@@ -278,29 +272,100 @@ label#icon-box3 {
     border-radius: 50%;
     margin-right: 10px;
     margin: 0 10px;
-
-
 }
 
-@media (max-width: 767px) {
-    .feed-container {
-        margin: auto;
-        padding-top: 6rem;
-        width: 400px;
-    }
 
+
+/* Bem-estar */
+#bem-estar {
+    background-color: #f8f9fa;
+    border-radius: 15px;
+}
+
+#bem-estar h2 {
+    font-weight: bold;
+    color: #333;
+}
+
+section#bem-estar {
+    padding-top: 7rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    height: 450px;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+    height: 200px;
+}
+
+.btn-primary {
+    background-color: #ff6b6b;
+    border: none;
+    margin-top: auto;
+    width: 150px;
+  
+}
+
+.btn-primary:hover {
+    background-color: #e63946;
+}
+
+
+@media (max-width: 767px) {
     .form-search-screen {
         width: 200px;
+    }
+
+    div.card-div-exercicio {
+        margin: auto;
+        width: 75%;
+        margin-bottom: 2rem;
+    }
+
+    div.card .card-img-top {
+        height: 250px;
+    }
+
+    section.container-section-feed {
+        margin: auto;
+        width: 380px;
+        padding-top: 6rem;
     }
 }
 
 
 @media (min-width: 768px) and (max-width: 991.97px) {
-    .feed-container {
-    margin: auto;
-    padding-top: 6rem;
-    width: 600px;
-  }
+    section.container-section-feed {
+        padding-top: 6rem;
+        display: grid;
+        margin-top: 20px;
+        width: 500px;
+    }
+
+    div.card-div-exercicio {
+        margin: auto;
+        width: 50%;
+        margin-bottom: 2rem;
+    }
+
+    div.card .card-img-top {
+        height: 250px;
+    }
 }
 
 
@@ -313,18 +378,42 @@ label#icon-box3 {
         margin-left: auto;
     }
 
-    .feed-container {
-        margin-left: auto;
+      div.card-div-exercicio {
+        margin: auto;
+        width: 45%;
+        margin-bottom: 2rem;
+    }
+
+    div.card .card-img-top {
+        height: 250px;
+    }
+
+    section.container-section-feed {
         padding-top: 6rem;
-        width: 670px;
-      }
+        display: grid;
+        margin-top: 20px;
+        width: 450px;
+    }
 }
 
 
 @media (min-width: 1301px) {
-    .feed-container {
+    div.card-div-exercicio {
         margin: auto;
+        width: 45%;
+        margin-bottom: 2rem;
+    }
+
+    div.card .card-img-top {
+        height: 280px;
+
+    }
+
+    section.container-section-feed {
         padding-top: 6rem;
-        width: 750px;
-      }
+        display: grid;
+        margin-top: 20px;
+        width: 700px;
+        
+    }
 }

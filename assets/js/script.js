@@ -167,7 +167,7 @@ function carregarPostagens() {
     postagens.forEach(post => {
         let comentariosHTML = post.comentarios.map(comentario => {
             return `
-                <div class="comentario">
+                <div class="comentario m-1 mb-4">
                     <img src="${comentario.fotoPerfil}" alt="Foto de ${comentario.nome}" class="comentario-foto">
                     <div>
                         <strong>${comentario.nome}</strong>: ${comentario.texto}
@@ -180,16 +180,16 @@ function carregarPostagens() {
             <div class="post">
                 <div class="post-header">
                     <img src="${post.fotoPerfil}" alt="Foto de ${post.nome}">
-                    <div>
+                    <div class="">
                         <strong>${post.nome}</strong> <br>
                         <small>${post.cargo} • ${post.tempo}</small>
                     </div>
                 </div>
-                <p>${post.texto}</p>
+                <p class="p-2">${post.texto}</p>
                 <div class="post-content">
                     <img src="${post.imagem}" alt="Imagem do post">
                 </div>
-                <div class="mt-2">
+                <div class="">
                     <span>💗 ${post.curtidas} • 💬 ${post.comentarios.length}</span>
                 </div>
                 <div class="comentarios">
